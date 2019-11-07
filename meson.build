@@ -13,9 +13,6 @@ project( 'master',
 root = meson.source_root()
 
 #######################################################################
-# External dependencies
-
-#######################################################################
 # Internal includes
 
 lib_headers = []
@@ -26,12 +23,18 @@ lib_headers = []
 subdir( 'mbh' )
 
 #######################################################################
+# Documentation
+
+subdir( 'doc' )
+
+#######################################################################
 # Further installation commands
 
+# for headers ( /path/to/install_dir/include/... )
 install_headers( lib_headers )
 
-#######################################################################
-#
+# for manuals ( /path/to/install_dir/man/... )
+# install_man()
 
 #######################################################################
-#
+
