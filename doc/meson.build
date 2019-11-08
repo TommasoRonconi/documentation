@@ -8,7 +8,7 @@ doxy_exe = find_program( [ 'doxygen' ],
 
 # Sphynx executable
 
-sphinx_exe = find_program( [ 'sphinx-quickstart' ],
+sphinx_exe = find_program( [ 'sphinx-build' ],
                            required : true )
 
 #######################################################################
@@ -28,19 +28,14 @@ doxy_file = configure_file( output : 'doxyfile',
 
 doxy_target = custom_target( 'mbh_doxy',
                              input : doxy_file,
-                             output : 'html',
+                             output : 'xml',
                              command : [ doxy_exe, doxy_file ],
                              install : true,
                              install_dir : man_path )
 
 #######################################################################
-# Sphynx documentation
+# Sphinx documentation
 
-# sphynx_target = custom_target( 'mbh_sphynx',
-#                                input : 'conf.py',
-#                                output : 'html',
-#                                command : [ sphynx_exe, '-b html', sourcedir, builddir ],
-#                                install : true,
-#                                install_dir : man_path )
+subdir( 'sphinx' )
 
 #######################################################################
