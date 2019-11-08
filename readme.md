@@ -87,3 +87,5 @@ meson /path/to/build_dir -Dprefix=/another/path/to/install_dir
 cd /path/to/build_dir
 ninja install
 ```
+
+### This repo is a work in progress, I'll add other functionalities in time... (e.g. it is still not possible to load it to RTD)
