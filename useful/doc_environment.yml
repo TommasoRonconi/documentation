@@ -1,0 +1,9 @@
+name: doc
+dependencies:
+	- python=3.7
+	- ninja
+	- meson
+	- sphinx
+	- sphinx_rtd_theme
+	- pip :
+	  - breathe
