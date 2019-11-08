@@ -77,7 +77,7 @@ If we (you) have done everything right, now you should have an `install` directo
 
 If you point your browser to the `share/man/html/index.html` file, you should see something like this:
 
-<img src="useful/doc_page_example.png" width="450"/>
+![](useful/doc_page_example.png)
 
 Congrats, you made your first authomated documentation page, you want to make it fancier? **RTFMs!!**
 
