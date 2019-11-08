@@ -12,8 +12,6 @@ project( 'master',
 
 root = meson.source_root()
 
-# message( 'build directory path: ' + get_option( 'mandir' ) )
-
 #######################################################################
 # Internal includes
 
@@ -36,7 +34,7 @@ subdir( 'doc' )
 install_headers( lib_headers )
 
 # for manuals ( -->/path/to/install_dir/share/man/... )
-install_man()
+# install_man()
 
 #######################################################################
 

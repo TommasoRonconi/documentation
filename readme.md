@@ -11,6 +11,8 @@ Be(a)ware of The F***ing Manual!!
 All the credit goes to [Sy Brand's tutorial](https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/) who
 implemented basicaly the same thing but using `CMake`. I have just ported it to `meson`.
 
+**_Note_** The name _MBH_ refers to a cool [Instagram profile](https://www.instagram.com/monstersholdingbitches/) that you will love, if you are a weirdo like myself...
+
 ## Dependencies
 
 All of these are available in `conda`:
