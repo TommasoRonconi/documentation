@@ -2,6 +2,11 @@ from ctypes import *
 
 lib = CDLL( '@MBH_WRAP_PATH@' )
 
+class monster () :
+    
+    def __init__( self ) :
+        print( 'ready to hold' )
+
 def this_does_nothing_but_externally () :
 
     pass

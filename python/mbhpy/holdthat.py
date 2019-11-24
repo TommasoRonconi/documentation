@@ -14,5 +14,7 @@ def this_does_nothing ( somevariable ) :
     """
 
     utils.this_does_nothing_but_externally()
+
+    mstr = utils.monster()
     
     return somevariable
