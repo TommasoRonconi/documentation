@@ -24,4 +24,10 @@ lib_headers += [ root + '/mbh/' + inc_dir + '/mbh.h' ]
 
 # ... WIP ...
 
+mbh_c_lib_name = mbh_lib.full_path().split('/')[-1]
+
+mbh_c_path = '/'.join( [ get_option( 'prefix' ),
+                           get_option( 'libdir' ),
+                           mbh_c_lib_name ] )
+
 #######################################################################

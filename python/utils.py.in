@@ -1,3 +1,7 @@
+from ctypes import *
+
+lib = CDLL( '@MBH_WRAP_PATH@' )
+
 def this_does_nothing_but_externally () :
 
     pass
