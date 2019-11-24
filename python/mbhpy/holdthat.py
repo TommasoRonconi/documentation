@@ -1,3 +1,5 @@
+from .utils import *
+
 def this_does_nothing ( somevariable ) :
     """
     Just giving back what I took
@@ -10,4 +12,7 @@ def this_does_nothing ( somevariable ) :
     -------
     samesy
     """
+
+    utils.this_does_nothing_but_externally()
+    
     return somevariable

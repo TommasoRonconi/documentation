@@ -14,9 +14,22 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../../../python'))
 
+# -- Configure Mock modules ---------------------------------------------------
+
+# autodoc_mock_imports = [ 'numpy', 'mbhpy.utils' ]
+# from unittest.mock import MagicMock
+
+# class Mock(MagicMock):
+#     @classmethod
+#     def __getattr__(cls, name):
+#         return MagicMock()
+
+# MOCK_MODULES = [ 'numpy', '.utils' ]
+# sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
+
 # -- Configuration for ReadTheDocs setup -------------------------------------
 
-import subprocess, os
+import subprocess
  
 def configureDoxyfile(input_dir, output_dir):
     with open('../../doxyfile.in', 'r') as file :
@@ -68,6 +81,7 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+autodoc_mock_imports = [ 'numpy', 'mbhpy.utils' ]
 
 # -- Options for HTML output -------------------------------------------------
 
