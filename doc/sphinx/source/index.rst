@@ -24,3 +24,9 @@ Docs
 
 .. doxygenstruct:: MBH
    :members:
+
+Python Docs
+===========
+
+.. automodule:: mbhpy.holdthat
+   :members:
